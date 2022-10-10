@@ -1,12 +1,12 @@
-## Stupid Router
+## Stupid Router 🧭
 
-###  Simple Router for Node.js! Use it for development only.
+###  Simple Router for Node.js! Use it to get started fast!.
 
-This is a small library to create router and server fast in **Node.js**.
+This is a small library to create router and server fast in **Node.js**.**Not Recommended for Production**.
 If you want a simple library to create a router and server in **Node.js** for testing things out this is the right library for you.
 I would not recommend using this in production.
 
-### Installation
+### Installation 🚀
 
 ```bash
 
@@ -64,7 +64,7 @@ server.start({
     ]
 })
 ```
-To use different methods you can preceded that path using the method name.
+To use different methods you can proceed that path using the method name.
 For example:
 ```js
 {
@@ -75,8 +75,10 @@ For example:
 }
 ```
 This will match the route only if the method is POST.
+***i.e** Make sure to use Capital letters for the method name.*
 
-To get the server to do further processing you can use getServer() method.
+To get the server to do further processing you can use `getServer()` method, which will return the server object.
+
 ```js
 
 // create a server with port 3000 and host
@@ -95,7 +97,7 @@ httpServer.on('request', (req, res) => {
 })
 ```
 
-Configuring not found and / or error handler. You can pass a function to the start method to handle not found and error.
+Configuring not found and/or error handler. You can pass a function to the start method to handle not found and error during processing your routes.
 ```js
 
 // create a server with port 3000 and host
