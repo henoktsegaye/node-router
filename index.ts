@@ -33,7 +33,7 @@ type ServerStartType = {
   errorHandler?: RequestHandler;
 };
 
-export default class ApiRouter {
+class ApiRouter {
   port;
   host;
   httpServer: Server | undefined;
@@ -112,5 +112,4 @@ export default class ApiRouter {
     return this.httpServer;
   }
 }
-
-export type { RequestHandler, HttpMethods, ServerStartType };
+export = ApiRouter

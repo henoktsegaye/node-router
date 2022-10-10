@@ -14,7 +14,7 @@ declare type ServerStartType = {
     notFoundHandler?: RequestHandler;
     errorHandler?: RequestHandler;
 };
-export default class ApiRouter {
+declare class ApiRouter {
     port: number;
     host: string;
     httpServer: Server | undefined;
@@ -38,4 +38,4 @@ export default class ApiRouter {
      */
     getServer(): Server<typeof IncomingMessage, typeof ServerResponse> | undefined;
 }
-export type { RequestHandler, HttpMethods, ServerStartType };
+export = ApiRouter;

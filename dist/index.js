@@ -1,5 +1,4 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 var http_1 = require("http");
 var url_1 = require("url");
 var ApiRouter = /** @class */ (function () {
@@ -68,4 +67,4 @@ var ApiRouter = /** @class */ (function () {
     };
     return ApiRouter;
 }());
-exports.default = ApiRouter;
+module.exports = ApiRouter;
