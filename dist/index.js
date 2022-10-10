@@ -4,6 +4,13 @@ var http_1 = require("http");
 var url_1 = require("url");
 var ApiRouter = /** @class */ (function () {
     function ApiRouter(port, host) {
+        /**
+         * configures the router
+         * @param routes routes
+         * @param req request
+         * @param res response
+         * @returns
+         */
         this.router = function (routes, req, res) {
             var _a, _b, _c;
             var pathname = (0, url_1.parse)((_a = req.url) !== null && _a !== void 0 ? _a : "", true).pathname;

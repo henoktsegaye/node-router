@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Error: no test specified\" && exit 0",
     "build": "tsc",
     "prepublish": "npm run build"
   },
@@ -15,8 +15,20 @@
     "api",
     "typescript"
   ],
+  "homepage": "https://github.com/henoktsegaye/stupid-router",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/henoktsegaye/stupid-router.git.git"
+  },
   "author": "Henok Tsegaye",
-  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/henoktsegaye/stupid-router.git/issues",
+    "email": "maxhenock@gmail.com"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "license": "MIT",
   "dependencies": {
     "@types/node": "^18.8.3",
     "typescript": "^4.8.4"

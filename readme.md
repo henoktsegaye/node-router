@@ -9,13 +9,17 @@ I would not recommend using this in production.
 ### Installation
 
 ```bash
+
 npm install stupid-router
-// pnpm
+
+# pnpm
+
 pnpm install stupid-router
-```
-If you prefer yarn:
-```bash
+
+#yarn
+
 yarn add stupid-router
+
 ```
 
 ### Usage
@@ -74,7 +78,6 @@ This will match the route only if the method is POST.
 
 To get the server to do further processing you can use getServer() method.
 ```js
-const httpServer = require('stupid-router');
 
 // create a server with port 3000 and host
 const server = new httpServer(3000, 'localhost');
@@ -91,6 +94,23 @@ httpServer.on('request', (req, res) => {
     // do something here
 })
 ```
+
+Configuring not found and / or error handler. You can pass a function to the start method to handle not found and error.
+```js
+
+// create a server with port 3000 and host
+const server = new httpServer(3000, 'localhost');
+
+server.start({
+    ...,
+    notFoundHandler: (req, res) => {
+        res.end('Not Found!')
+    },
+    errorHandler: (err, req, res) => {
+        res.end('Error!')
+    }
+})
+
 
 ### License
 

@@ -19,6 +19,13 @@ export default class ApiRouter {
     host: string;
     httpServer: Server | undefined;
     constructor(port: number, host: string);
+    /**
+     * configures the router
+     * @param routes routes
+     * @param req request
+     * @param res response
+     * @returns
+     */
     router: (routes: ServerStartType, req: IncomingMessage, res: ServerResponse) => void;
     /**
      * the server start listener
