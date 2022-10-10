@@ -1,6 +1,6 @@
-## Node Router
+## Stupid Router
 
-###  Simple Router for Node.js for development.
+###  Simple Router for Node.js! Use it for development only.
 
 This is a small library to create router and server fast in **Node.js**.
 If you want a simple library to create a router and server in **Node.js** for testing things out this is the right library for you.
@@ -9,13 +9,19 @@ I would not recommend using this in production.
 ### Installation
 
 ```bash
-npm install node-router
+npm install stupid-router
+// pnpm
+pnpm install stupid-router
+```
+If you prefer yarn:
+```bash
+yarn add stupid-router
 ```
 
 ### Usage
 
 ```js
-const httpServer = require('node-router');
+const httpServer = require('stupid-router');
 
 // create a server with port 3000 and host
 const server = new httpServer(3000, 'localhost');
@@ -68,7 +74,7 @@ This will match the route only if the method is POST.
 
 To get the server to do further processing you can use getServer() method.
 ```js
-const httpServer = require('node-router');
+const httpServer = require('stupid-router');
 
 // create a server with port 3000 and host
 const server = new httpServer(3000, 'localhost');
