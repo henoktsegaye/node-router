@@ -1,16 +1,21 @@
 {
-  "name": "api-router",
+  "name": "node-router",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build" : "tsc",
+    "build": "tsc",
     "prepublish": "npm run build"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "router",
+    "node",
+    "api",
+    "typescript"
+  ],
+  "author": "Henok Tsegaye",
   "license": "ISC",
   "dependencies": {
     "@types/node": "^18.8.3",

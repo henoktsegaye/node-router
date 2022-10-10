@@ -1,5 +1,4 @@
 ## Node Router
----
 
 ###  Simple Router for Node.js for development.
 
